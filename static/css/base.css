@@ -1,0 +1,118 @@
+/*
+ * ----------------------------------
+ * -          VARIABLES             -
+ * ----------------------------------
+*/
+/*
+ * ----------------------------------
+ * -           MIXINS               -
+ * ----------------------------------
+*/
+/*
+ * ----------------------------------
+ * -            CSS                 -
+ * ----------------------------------
+*/
+/* line 29, ../../../sasquatch/static/sass/base.scss */
+header[role="banner"] {
+  margin: 0 auto 30px auto;
+  width: 75%;
+  border-style: solid;
+  border-width: 1px;
+  height: 89px;
+}
+/* line 34, ../../../sasquatch/static/sass/base.scss */
+header[role="banner"] img {
+  display: block;
+  opacity: .95;
+  float: left;
+}
+/* line 38, ../../../sasquatch/static/sass/base.scss */
+header[role="banner"] #menu-bar {
+  border-style: solid;
+  border-width: 1px;
+  float: right;
+  height: 100%;
+  width: 710px;
+}
+
+/* line 46, ../../../sasquatch/static/sass/base.scss */
+#footer {
+  margin: 0 auto 30px auto;
+  width: 75%;
+  height: 30px;
+}
+
+/* line 52, ../../../sasquatch/static/sass/base.scss */
+#placeholder-main {
+  margin: 0 auto 30px auto;
+  width: 75%;
+  border-style: solid;
+  border-width: 1px;
+  height: 700px;
+}
+
+/* line 57, ../../../sasquatch/static/sass/base.scss */
+#placeholder-content {
+  margin: 0 auto 30px auto;
+  width: 75%;
+  border-style: solid;
+  border-width: 1px;
+  height: 500px;
+}
+/* line 62, ../../../sasquatch/static/sass/base.scss */
+#placeholder-content .main-content {
+  border-style: solid;
+  border-width: 1px;
+  float: left;
+  height: 100%;
+  width: 33%;
+}
+/* line 68, ../../../sasquatch/static/sass/base.scss */
+#placeholder-content #content3 {
+  float: right;
+}
+
+/* line 74, ../../../sasquatch/static/sass/base.scss */
+#gallery-content {
+  margin: 0 auto 30px auto;
+  width: 75%;
+  border-style: solid;
+  border-width: 1px;
+}
+/* line 78, ../../../sasquatch/static/sass/base.scss */
+#gallery-content .main-content {
+  border-style: solid;
+  border-width: 1px;
+  float: left;
+  height: 0;
+  padding-bottom: 33%;
+  position: relative;
+  width: 33%;
+}
+
+/* line 89, ../../../sasquatch/static/sass/base.scss */
+#product-content {
+  margin: 0 auto 30px auto;
+  width: 75%;
+  border-style: solid;
+  border-width: 1px;
+}
+/* line 93, ../../../sasquatch/static/sass/base.scss */
+#product-content .main-content {
+  border-style: solid;
+  border-width: 1px;
+  float: left;
+  height: 0;
+  padding-bottom: 40%;
+  position: relative;
+  width: 40%;
+}
+/* line 101, ../../../sasquatch/static/sass/base.scss */
+#product-content .left {
+  float: left;
+}
+/* line 104, ../../../sasquatch/static/sass/base.scss */
+#product-content .right {
+  float: right;
+}
