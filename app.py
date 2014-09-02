@@ -14,11 +14,11 @@ def gallery():
     return render_template('gallery.html')
 
 @app.route('/products')
-def gallery():
+def products():
     return render_template('products.html')
 
 @app.route('/contact-us')
-def gallery():
+def contact_us():
     return render_template('contact-us.html')
 
 if __name__ == "__main__":

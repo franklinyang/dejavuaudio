@@ -13,106 +13,150 @@
  * -            CSS                 -
  * ----------------------------------
 */
-/* line 29, ../../../sasquatch/static/sass/base.scss */
 header[role="banner"] {
   margin: 0 auto 30px auto;
   width: 75%;
-  border-style: solid;
-  border-width: 1px;
-  height: 89px;
-}
-/* line 34, ../../../sasquatch/static/sass/base.scss */
-header[role="banner"] img {
-  display: block;
-  opacity: .95;
-  float: left;
-}
-/* line 38, ../../../sasquatch/static/sass/base.scss */
-header[role="banner"] #menu-bar {
-  border-style: solid;
-  border-width: 1px;
-  float: right;
-  height: 100%;
-  width: 710px;
-}
+  height: 80px; }
+  header[role="banner"] img {
+    display: block;
+    opacity: .95;
+    float: left; }
+  header[role="banner"] #menu-bar {
+    border-style: solid;
+    border-width: 1px;
+    float: right;
+    height: 100%;
+    width: 710px; }
 
-/* line 46, ../../../sasquatch/static/sass/base.scss */
 #footer {
   margin: 0 auto 30px auto;
   width: 75%;
-  height: 30px;
-}
+  border-style: solid;
+  border-width: 1px;
+  clear: both;
+  height: 30px; }
 
-/* line 52, ../../../sasquatch/static/sass/base.scss */
 #placeholder-main {
   margin: 0 auto 30px auto;
   width: 75%;
   border-style: solid;
   border-width: 1px;
-  height: 700px;
-}
+  height: 700px; }
 
-/* line 57, ../../../sasquatch/static/sass/base.scss */
 #placeholder-content {
   margin: 0 auto 30px auto;
   width: 75%;
   border-style: solid;
   border-width: 1px;
-  height: 500px;
-}
-/* line 62, ../../../sasquatch/static/sass/base.scss */
-#placeholder-content .main-content {
-  border-style: solid;
-  border-width: 1px;
-  float: left;
-  height: 100%;
-  width: 33%;
-}
-/* line 68, ../../../sasquatch/static/sass/base.scss */
-#placeholder-content #content3 {
-  float: right;
-}
+  height: 500px; }
+  #placeholder-content .main-content {
+    border-style: solid;
+    border-width: 1px;
+    float: left;
+    height: 100%;
+    width: 33%; }
+  #placeholder-content #content3 {
+    float: right; }
 
-/* line 74, ../../../sasquatch/static/sass/base.scss */
 #gallery-content {
   margin: 0 auto 30px auto;
   width: 75%;
   border-style: solid;
-  border-width: 1px;
-}
-/* line 78, ../../../sasquatch/static/sass/base.scss */
-#gallery-content .main-content {
-  border-style: solid;
-  border-width: 1px;
-  float: left;
-  height: 0;
-  padding-bottom: 33%;
-  position: relative;
-  width: 33%;
-}
+  border-width: 1px; }
+  #gallery-content .main-content {
+    border-style: solid;
+    border-width: 1px;
+    float: left;
+    height: 0;
+    padding-bottom: 33%;
+    width: 33%; }
 
-/* line 89, ../../../sasquatch/static/sass/base.scss */
 #product-content {
+  margin: 0 auto 30px auto;
+  width: 75%; }
+  #product-content .main-content {
+    border-style: solid;
+    border-width: 1px;
+    float: left;
+    height: 0;
+    padding-bottom: 30%;
+    width: 30%; }
+  #product-content .left {
+    float: left;
+    margin: 0 0 3% 2%; }
+  #product-content .middle {
+    float: left;
+    margin: 0 2% 3% 3%; }
+  #product-content .right {
+    float: right;
+    margin: 0 2% 3% 0; }
+
+#contact-main {
   margin: 0 auto 30px auto;
   width: 75%;
   border-style: solid;
   border-width: 1px;
-}
-/* line 93, ../../../sasquatch/static/sass/base.scss */
-#product-content .main-content {
-  border-style: solid;
-  border-width: 1px;
-  float: left;
-  height: 0;
-  padding-bottom: 40%;
-  position: relative;
-  width: 40%;
-}
-/* line 101, ../../../sasquatch/static/sass/base.scss */
-#product-content .left {
-  float: left;
-}
-/* line 104, ../../../sasquatch/static/sass/base.scss */
-#product-content .right {
-  float: right;
-}
+  height: 600px;
+  width: 60%; }
+  #contact-main .main-content {
+    height: 100%;
+    float: left;
+    width: 69%; }
+  #contact-main #contact-greeting {
+    margin: 5% 5%; }
+  #contact-main #contact-form {
+    margin: 5% 5%; }
+  #contact-main #contact-sidebar {
+    border-left-style: dashed;
+    border-left-width: 2px;
+    height: 100%;
+    float: right;
+    width: 30%; }
+    #contact-main #contact-sidebar .label {
+      clear: block;
+      color: red;
+      text-transform: uppercase; }
+    #contact-main #contact-sidebar .content {
+      clear: block; }
+    #contact-main #contact-sidebar .sidebar-content {
+      margin: 10% 10%; }
+  #contact-main #contact-name-container {
+    float: left;
+    width: 30%%; }
+    #contact-main #contact-name-container label {
+      display: block; }
+    #contact-main #contact-name-container input {
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      border-width: 1px;
+      border-style: solid;
+      height: 25px;
+      width: 100%;
+      display: block; }
+  #contact-main #contact-email-container {
+    float: right;
+    width: 30%%; }
+    #contact-main #contact-email-container label {
+      display: block; }
+    #contact-main #contact-email-container input {
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      border-width: 1px;
+      border-style: solid;
+      height: 25px;
+      width: 100%;
+      display: block; }
+  #contact-main #contact-message-container {
+    clear: both; }
+    #contact-main #contact-message-container label {
+      display: block; }
+    #contact-main #contact-message-container textarea {
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      border-width: 1px;
+      height: 300px;
+      resize: none;
+      width: 100%; }

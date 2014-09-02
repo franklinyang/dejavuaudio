@@ -1,0 +1,201 @@
+/*
+ * ----------------------------------
+ * -          VARIABLES             -
+ * ----------------------------------
+*/
+
+/*
+ * ----------------------------------
+ * -           MIXINS               -
+ * ----------------------------------
+*/
+@mixin borders {
+    border-style: solid;
+    border-width: 1px;
+}
+
+@mixin container-style {
+    margin: 0 auto 30px auto;
+    width: 75%;
+}
+
+@mixin input-style {
+    @include rounded(5px);
+    border-width: 1px;
+    border-style: solid;
+    height: 25px;
+    width: 100%;
+}
+
+@mixin margins {
+    margin: 5% 5%;
+}
+
+@mixin rounded($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+/*
+ * ----------------------------------
+ * -            CSS                 -
+ * ----------------------------------
+*/
+// ------------ common --------------
+header[role="banner"] {
+    @include container-style;
+    height: 80px;
+
+    img { 
+        display: block; opacity: .95;
+        float: left;
+    } 
+    #menu-bar {
+        @include borders;
+        float:right;
+        height: 100%;
+        width: 710px;
+    }
+}
+
+#footer {
+    @include container-style;
+    @include borders;
+    clear: both;
+    height: 30px;
+}
+
+// ------------- homepage -------------
+#placeholder-main {
+    @include container-style;
+    @include borders;
+    height: 700px;
+}
+#placeholder-content {
+    @include container-style;
+    @include borders;
+    height: 500px;
+
+    .main-content {
+        @include borders;
+        float: left;
+        height: 100%;
+        width: 33%;
+    }
+    #content3 {
+        float: right;
+    }
+}
+
+// ------------- gallery -------------
+#gallery-content {
+    @include container-style;
+    @include borders;
+
+    .main-content {
+        @include borders;
+        float: left;
+        height: 0;
+        padding-bottom: 33%;
+        width: 33%;
+    }
+}
+
+// ------------- gallery -------------
+#product-content {
+    @include container-style;
+
+    .main-content {
+        @include borders;
+        float: left;
+        height: 0;
+        padding-bottom: 30%;
+        width: 30%;
+    }
+    .left {
+        float: left;
+        margin: 0 0 3% 2%;
+    }
+    .middle {
+        float: left;
+        margin: 0 2% 3% 3%;
+    }
+    .right {
+        float: right;
+        margin: 0 2% 3% 0;
+    }
+}
+
+// --------- contact-us -----------
+#contact-main {
+    @include container-style;
+    @include borders;
+    height: 600px;
+    width: 60%;
+
+    .main-content {
+        height: 100%;
+        float: left;
+        width: 69%;
+    }
+    #contact-greeting {
+        @include margins;
+    }
+    #contact-form {
+        @include margins;
+    }
+    #contact-sidebar {
+        border-left-style: dashed;
+        border-left-width: 2px;
+        height: 100%;
+        float: right;
+        width:30%;
+        .label {
+            clear: block;
+            color: red;
+            text-transform: uppercase;
+        }
+        .content {
+            clear: block;
+        }
+        .sidebar-content {
+            margin: 10% 10%;
+        }
+    }
+    #contact-name-container {
+        float: left;
+        width: 30%%;
+        label {
+            display: block;
+        }
+        input {
+            @include input-style;
+            display: block;
+        }
+    }
+    #contact-email-container {
+        float: right;
+        width: 30%%;
+        label {
+            display: block;
+        }
+        input {
+            @include input-style;
+            display: block;
+        }
+    }
+    #contact-message-container {
+        clear: both;
+        label {
+            display: block; 
+        }
+        textarea {
+            @include rounded(10px);
+            border-width: 1px;
+            height: 300px;
+            resize: none;
+            width: 100%;
+        }
+    }
+}
