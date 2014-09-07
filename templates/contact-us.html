@@ -1,54 +1,56 @@
 <!DOCTYPE html>
 <html>
     <body>
-        {% include 'header.html' %}
-        <div id="contact-main">    
-            <div class="main-content">
-                <div id="contact-greeting">
-                    <h1> Contact Us </h1>
-                    <p>
-                    Please feel free to reach out to us and schedule an appointment! We're always happy
-                    to answer any questions you may have, related to audio or not. We will respond as
-                    quickly as we can.
-                    </p>
-                </div>
-                <form id="contact-form" name="contact-form" action="submit-inquiry" method="get">
-                    <div id="contact-name-container">
-                        <label for="name">Name: <span>*</span> </label>
-                        <input type="text" name="name" required>
-                    </div>
-                    <div id="contact-email-container">
-                        <label for="email">Email: <span>*</span> </label>
-                        <input type="email" name="email" required><br/>
-                    </div>
-                    <div id="contact-message-container">
-                        <label for="message">Message: <span>*</span> </label>
-                        <textarea id="contact-message" cols="50" name="message" form="contact-form"></textarea>
-                    </div>
-                    <input type="submit" value="Send">
-                </form>
-            </div>
-            <div id="contact-sidebar">
-                <div id="content1" class="sidebar-content"> 
-                    <div class="label">Email</div>
-                    <div class="content">info@dejavuaudio.com</div>
-                </div>
-                <div id="content2" class="sidebar-content">
-                    <div class="label">Telephone</div>
-                    <div class="content">(703) 734-9391</div>
-                </div>
-                <div id="content3" class="sidebar-content">
-                    <div class="label">Address</div>
-                    <div class="content">
-                        1401 Chain Bridge Rd<br/>
-                        Suite 203 <br/>
-                        McLean, Virginia 22101
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="footer">
-            © Deja Vu Audio LTD.
-        </div>
+	<div id="wrapper">
+          {% include 'header.html' %}
+          <div id="contact-main">    
+              <div class="main-content">
+                  <div id="contact-greeting">
+                      <h1> Contact Us </h1>
+                      <p>
+                      Please feel free to reach out to us and schedule an appointment! We're always happy
+                      to answer any questions you may have, related to audio or not. We will respond as
+                      quickly as we can.
+                      </p>
+                  </div>
+                  <form id="contact-form" name="contact-form" action="submit-inquiry" method="get">
+                      <div id="contact-name-container">
+                          <label for="name">Name: <span>*</span> </label>
+                          <input type="text" name="name" required>
+                      </div>
+                      <div id="contact-email-container">
+                          <label for="email">Email: <span>*</span> </label>
+                          <input type="email" name="email" required><br/>
+                      </div>
+                      <div id="contact-message-container">
+                          <label for="message">Message: <span>*</span> </label>
+                          <textarea id="contact-message" cols="50" name="message" form="contact-form"></textarea>
+                      </div>
+                      <input type="submit" value="Send">
+                  </form>
+              </div>
+              <div id="contact-sidebar">
+                  <div id="content1" class="sidebar-content"> 
+                      <div class="label">Email</div>
+                      <div class="content">info@dejavuaudio.com</div>
+                  </div>
+                  <div id="content2" class="sidebar-content">
+                      <div class="label">Telephone</div>
+                      <div class="content">(703) 734-9391</div>
+                  </div>
+                  <div id="content3" class="sidebar-content">
+                      <div class="label">Address</div>
+                      <div class="content">
+                          1401 Chain Bridge Rd<br/>
+                          Suite 203 <br/>
+                          McLean, Virginia 22101
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div id="footer">
+              © Deja Vu Audio LTD.
+          </div>
+	</div>
     </body>
 </html>

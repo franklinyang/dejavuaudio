@@ -1,6 +1,10 @@
 $(document).ready(function(){
-  console.debug(1);
   $('.carousel').carousel({
-    interval: 2000
   })
+  $('a[data-slide="prev"]').click(function() {
+    $('#myCarousel').carousel('prev');
+  });
+  $('a[data-slide="next"]').click(function() {
+    $('#myCarousel').carousel('next');
+  }); 
 });

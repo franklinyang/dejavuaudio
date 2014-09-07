@@ -51,22 +51,22 @@ header[role="banner"] {
     height: 100%;
     width: 667px; }
 
-.nav {
+.custom-nav {
   list-style-type: none;
   font-family: 'Gentium Basic';
   font-size: 17px;
   font-weight: bold;
   margin-top: 67px; }
-  .nav #products {
+  .custom-nav #products {
     display: inline;
     margin-left: 8px; }
-  .nav #gallery {
+  .custom-nav #gallery {
     display: inline;
     margin-left: 114px; }
-  .nav #about {
+  .custom-nav #about {
     display: inline;
     margin-left: 96px; }
-  .nav #contact {
+  .custom-nav #contact {
     display: inline;
     margin-left: 84px; }
 

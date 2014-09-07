@@ -3,22 +3,36 @@
     <body>
 	<div id="wrapper">
             {% include 'header.html' %}
-	    <div id="homepage-slideshow">
-                <div id="homepage-main">
-        	  <div id="image1">
-        	      <img src="/static/img/clearaudio_turntable1.png">
-        	  </div>                
-        	  <div id="image1-desc">
-        	    <h3> AVANT-GARDE. </h3>
-        	    <span> Do you tend to be a perfectionist? The Avant-Garde
-        	        concept allows you to do what Deja Vu's engineers do.
-        	        Reaching perfection with a 7kg platter and a precisely
-        	        matching bearing. </br> </br>
-        	        The result is a heavy mass turntable with absolute
-        	        speed stability. </span>
-        	  </div>                
-                </div>
-		<div id="homepage2"> Hello </div>
+	    <div id="myCarousel" class="carousel homepage-slideshow">
+<!--
+		<ol class="carousel-indicators">
+        	    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        	    <li data-target="#myCarousel" data-slide-to="1"></li>
+                </ol>
+-->
+                <div id="homepage-main" class="carousel-inner">
+		    <div class="active item">
+        	        <div id="image1">
+        	            <img src="/static/img/clearaudio_turntable1.png">
+        	        </div>                
+        	        <div id="image1-desc">
+        	          <h3> AVANT-GARDE. </h3>
+        	          <span> Do you tend to be a perfectionist? The Avant-Garde
+        	              concept allows you to do what Deja Vu's engineers do.
+        	              Reaching perfection with a 7kg platter and a precisely
+        	              matching bearing. </br> </br>
+        	              The result is a heavy mass turntable with absolute
+        	              speed stability. </span>
+        	        </div>                
+                    </div>
+		    <div class="item">
+		        <div id="homepage2"> Hello </div>
+		    </div>
+		</div>
+		<a class="carousel-control left" href="#myCarousel" data-slide="prev">
+		</a>
+                <a class="carousel-control right" href="#myCarousel" data-slide="next">
+		</a>
 	    </div>
             <div id="homepage-content">
                    <div id="content1" class="main-content"> </div>
@@ -31,5 +45,3 @@
 	</div>
     </body>
 </html>
-
-
