@@ -9,6 +9,11 @@ app = Flask(__name__)
 def homepage():
     return render_template('homepage.html')
 
+@app.route('/')
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
 @app.route('/gallery')
 def gallery():
     return render_template('gallery.html')
