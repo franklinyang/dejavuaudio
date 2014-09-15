@@ -45,48 +45,46 @@ header[role="banner"] {
     border-style: solid;
     border-width: 1px;
     background: url(/static/img/menu-bar2.png) no-repeat;
-    background-color: #F4F4F4;
+    background-color: #f4f4f4;
     background-position: center;
-    margin-left: 20px;
+    margin-left: 30px;
     float: right;
     height: 100%;
     width: 667px; }
 
 .custom-nav {
   list-style-type: none;
-  font-family: 'Gentium Basic';
+  font-family: "Fjord One";
   font-size: 17px;
   font-weight: bold;
   margin-top: 60px; }
   .custom-nav #products {
-    display: inline;
-    margin-left: 8px; }
+    display: inline; }
   .custom-nav #gallery {
     display: inline;
     margin-left: 114px; }
   .custom-nav #about {
     display: inline;
-    margin-left: 96px; }
+    margin-left: 92px; }
   .custom-nav #contact {
     display: inline;
-    margin-left: 84px; }
+    margin-left: 77px; }
 
 #footer {
   margin: 0 auto 30px auto;
   width: 1280px;
-  border-style: solid;
-  border-width: 1px;
   background-color: #d2d4d5;
   clear: both;
-  height: 30px; }
+  font-family: "Fjord One";
+  text-align: center; }
 
 #wrapper {
-  background-image: -webkit-radial-gradient(700px, ellipse closest-side, #fff, #fafafa 150px, #d2d4d5 400px); }
+  background-image: -webkit-radial-gradient(700px, ellipse closest-side, white, #fafafa 150px, #d2d4d5 400px); }
 
 #homepage-main {
   margin: 0 auto 30px auto;
   width: 1280px;
-  height: 700px; }
+  height: 600px; }
 
 #image1 {
   display: inline; }
@@ -97,7 +95,7 @@ header[role="banner"] {
 #image1-desc {
   display: inline;
   float: right;
-  font-family: 'Fjord One';
+  font-family: "Fjord One";
   font-size: 20px;
   line-height: 1.5;
   margin: 180px 50px;
@@ -166,7 +164,7 @@ header[role="banner"] {
   width: 1280px;
   border-style: solid;
   border-width: 1px;
-  background-color: white;
+  background-color: #f4f4f4;
   height: 650px;
   line-height: 1.5;
   width: 1050px; }
@@ -177,6 +175,9 @@ header[role="banner"] {
   #contact-main #contact-greeting {
     margin: 5% 5%;
     margin-bottom: 0px; }
+    #contact-main #contact-greeting h1 {
+      font-family: Lato;
+      font-weight: bold; }
   #contact-main #contact-form {
     margin: 5% 5%;
     margin-top: 0px; }
@@ -188,7 +189,10 @@ header[role="banner"] {
     width: 30%; }
     #contact-main #contact-sidebar .label {
       clear: block;
-      color: #E85253;
+      color: #e85253;
+      font-size: 15px;
+      font-weight: bold;
+      padding: 0;
       text-transform: uppercase; }
     #contact-main #contact-sidebar .content {
       clear: block; }
@@ -196,11 +200,11 @@ header[role="banner"] {
       margin: 10% 10%; }
   #contact-main input {
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    background-color: #F1F1F1; }
+    font-size: 15px;
+    background-color: white; }
   #contact-main input[type=submit] {
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -208,22 +212,23 @@ header[role="banner"] {
     border-style: solid;
     height: 25px;
     width: 100%;
-    background-color: #E85253;
-    color: white;
+    background-color: #e85253;
+    color: #f4f4f4;
     cursor: pointer;
     display: block;
     float: right;
     font-size: 14px;
     font-weight: bold;
+    margin-top: 25px;
     height: 30px;
     width: 100px; }
   #contact-main textarea {
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    background-color: #F1F1F1; }
+    font-size: 15px;
+    background-color: white; }
   #contact-main #contact-name-container {
     float: left;
-    width: 30%; }
+    width: 200px; }
     #contact-main #contact-name-container label {
       display: block;
       font-size: 14px;
@@ -239,10 +244,10 @@ header[role="banner"] {
       width: 100%;
       display: block; }
     #contact-main #contact-name-container span {
-      color: #E85253; }
+      color: #e85253; }
   #contact-main #contact-email-container {
     float: right;
-    width: 30%; }
+    width: 250px; }
     #contact-main #contact-email-container label {
       display: block;
       font-size: 14px;
@@ -258,7 +263,7 @@ header[role="banner"] {
       width: 100%;
       display: block; }
     #contact-main #contact-email-container span {
-      color: #E85253; }
+      color: #e85253; }
   #contact-main #contact-message-container {
     clear: both; }
     #contact-main #contact-message-container label {
@@ -276,7 +281,7 @@ header[role="banner"] {
       width: 100%;
       display: block; }
     #contact-main #contact-message-container span {
-      color: #E85253; }
+      color: #e85253; }
     #contact-main #contact-message-container label {
       display: block;
       font-size: 14px;
@@ -294,8 +299,17 @@ header[role="banner"] {
 #about-main {
   margin: 0 auto 30px auto;
   width: 1280px;
-  font-size: 20px;
   line-height: 1.5;
   width: 1200px; }
-
-/*# sourceMappingURL=base.css.map */
+  #about-main h2 {
+    font-family: Lato;
+    font-size: 26px;
+    font-weight: bold;
+    margin: auto;
+    padding: 30px 0px;
+    text-align: center;
+    width: 500px; }
+  #about-main p {
+    font-size: 16px;
+    margin: auto;
+    width: 500px; }
